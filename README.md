@@ -14,11 +14,24 @@ However, as long as format of json matches requirement for this project, actual 
 
 ### `json Format`
 
-```python
+
+```javascript
 {
 “id”: someNumber,
 “Tasks”: [ list of json format tasks]
 }
+```
+
+```javascript
+{
+"title": some string,
+      	"desc": some string,
+      	"due": string in mm/dd/yyyy,
+      	"id": some unique number,
+      	"status": "pending"||”inprogress”||”complete”,
+      	"edit": true||false
+}
+
 ```
 
 
