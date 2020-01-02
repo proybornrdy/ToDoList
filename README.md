@@ -46,19 +46,52 @@ In this section, each function will be described breifly for better understandin
 
 ### `getData()`
 
-- When program is first loaded, it is initially set to display user input field for the server address.<br />
-- If valid address that meets the expectation of JSON format is entered, this function is fired to fetch data from the server.<br />
-- Fetched data is converted to appropriate format within the application and can be accessed in future usage without requesting to the server.<br />
+- When program is first loaded, it is initially set to display user input field for the server address.
+  - After the first load, the application will display users tasks instead.
+- If valid address that meets the expectation of JSON format is entered, this function is fired to fetch data from the server.
+- Fetched data is converted to appropriate format within the application and can be accessed in future usage without requesting to the server.
 - The server address is also stored within application for future request to server.
 
-### `getUserTasks()`
-
 ### `showTasks()`and `divideTasks()`
+- showTasks() calls divideTasks() to divide users tasks into three different categories.
+- Depending on which sorting method is selected, tasks are split into three according to their urgency or progression.
+- If sorted in urgency, tasks are divided into `critical`, `urgent` and `normal`
+  - Critical: 24hr and less 
+  - Urgent: less than 7 days
+  - Normal: more than a week
+- Otherwise, tasks are sorted by progression (their status).Tasks are divided into `Pending`, `in-progress` and `completed`
+- showTasks() then creates its html element with three divisions, each division containing appropriate tasks.
 
 ### `addUserTask()` and `taskIDGenerator()`
-
+- Users can add their tasks by filling in the input fields in designated area at the top.
+- For the due-date field, [react-datepicker](https://www.npmjs.com/package/react-datepicker) plugin was used.
+- Upon user pressing the `add` button, addUserTask() creates JSON format string for the Task.
+  - each created task is assigned with unique `taskID`, which is based off from time task is created.
+- Once task is created, application request PUT method to server to update user's tasks.
 
 ### `editUserTask(taskID)` and `removeUserTask(taskID)` 
 
+- Once editUserTask() is called, user can access within html element of the specific task to make change.
+  - If the field is left blank, no change will be made
+- changing task among list of tasks can be identified by unique taskID
+- removeUserTask() works similar to editUserTask() except it removes task with unique taskID
+- At the end of each function, application request PUT method to update user's tasks.
+
+
 ## Possible Improvements
+Due to limited time (5hr) I have set for this project, there are many areas which can be improved.
+
+### Program-wise
+- With larger scale of tasks, using multi-thread for the sorting or dividing tasks would benefit in run-time.
+  - Current application uses linear search since its scale is small
+- Support multiple users by adding authetication method for each users
+- change HTTP request to more secured connection 
+- change to Object Oriented Programming along with modular design
+
+### Feature-wise
+- color code tasks' statuses and each task card depending on urgency
+- calendar view of the user's task
+- responsive web design
+- Mail or sms notification
+- Login system
 
