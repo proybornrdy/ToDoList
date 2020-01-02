@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
-Purpose of this projcect is to immitate todo-list web application, thats available online, using reactJS.
+Purpose of this projcect is to immitate todo-list web application, thats available online, using reactJS.<br />
+The project was time limited and has potential to be upgraded in the future.
 
 ## REST API Server
 
@@ -12,7 +13,7 @@ used placeholder for the REST API instead of using actual server.<br />
 
 However, as long as format of json matches requirement for this project, actual server can be used for the project.
 
-### `json Format`
+### `Json Format`
 
 As mentioned in above section, any server (or placeholder) can be used for the project,<br />
 as long as json follows the following format.
@@ -37,52 +38,27 @@ Json format tasks:
 ```
 
 
-### `npm run build`
+## Code Breakdown 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Currently code is designed in procedural programming but with Object oriented programming in mind.<br />
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+In this section, each function will be described breifly for better understanding of this web-application.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `getData()`
 
-### `npm run eject`
+When program is first loaded, it is initially set to display user input field for the server address.<br />
+If valid address that meets the expectation of JSON format is entered, this function is fired to fetch data from the server.<br />
+Fetched data is converted to appropriate format within the application and can be accessed in future usage without requesting to the server.<br />
+The server address is also stored within application for future request to server.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `getUserTasks()`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `showTasks()`and `divideTasks()`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `addUserTask()` and `taskIDGenerator()`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### `editUserTask(taskID)` and `removeUserTask(taskID)` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Possible Improvements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
