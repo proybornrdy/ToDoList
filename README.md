@@ -46,10 +46,10 @@ In this section, each function will be described breifly for better understandin
 
 ### `getData()`
 
-When program is first loaded, it is initially set to display user input field for the server address.<br />
-If valid address that meets the expectation of JSON format is entered, this function is fired to fetch data from the server.<br />
-Fetched data is converted to appropriate format within the application and can be accessed in future usage without requesting to the server.<br />
-The server address is also stored within application for future request to server.
+- When program is first loaded, it is initially set to display user input field for the server address.<br />
+- If valid address that meets the expectation of JSON format is entered, this function is fired to fetch data from the server.<br />
+- Fetched data is converted to appropriate format within the application and can be accessed in future usage without requesting to the server.<br />
+- The server address is also stored within application for future request to server.
 
 ### `getUserTasks()`
 
