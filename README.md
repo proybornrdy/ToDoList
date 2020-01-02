@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
 Purpose of this projcect is to immitate todo-list web application, thats available online, using reactJS.
 
 ## REST API Server
@@ -14,6 +14,8 @@ However, as long as format of json matches requirement for this project, actual 
 
 ### `json Format`
 
+As mentioned in above section, any server (or placeholder) can be used for the project,<br />
+as long as json follows the following format.
 
 ```javascript
 {
@@ -21,7 +23,7 @@ However, as long as format of json matches requirement for this project, actual 
 “Tasks”: [ list of json format tasks]
 }
 ```
-
+Json format tasks:
 ```javascript
 {
 "title": some string,
