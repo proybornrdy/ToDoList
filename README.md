@@ -5,7 +5,7 @@ Purpose of this projcect is to immitate todo-list web application, thats availab
 
 This project uses JSON REST APIs to fetch user's to do list.
 
-### `Fake REST API` - [json-server] (https://www.npmjs.com/package/json-server)
+### `Fake REST API` - [json-server](https://www.npmjs.com/package/json-server)
 
 For the purpose of this project, which is to create front-end of a web application,
 used placeholder for the REST API instead of using actual server.<br />
@@ -14,7 +14,7 @@ However, as long as format of json matches requirement for this project, actual 
 
 ### `json Format`
 
-```json
+```python
 {
 “id”: someNumber,
 “Tasks”: [ list of json format tasks]
