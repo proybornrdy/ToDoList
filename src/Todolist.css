@@ -1,0 +1,99 @@
+.testBox{
+  padding: 5% 5%;
+  height: 100%;
+}
+
+.division{
+  display: flex;
+}
+
+.div1{
+  margin: 10px;
+  padding:10px;
+  width: 350px;
+  border: thin solid black;
+  border-radius: 15px;
+}
+.div2{
+  margin: 10px;
+  padding:10px;
+  width: 350px;
+  border: thin solid black;
+  border-radius: 15px;
+}
+.div3{
+  margin: 10px;
+  padding:10px;
+  width: 350px;
+  border: thin solid black;
+  border-radius: 15px;
+}
+
+.task{
+  /* will be removed*/
+  width: 300px;
+  height: 300px;
+  margin: 5px 0px;
+
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  border-radius: 10px;
+  background-color: pink;
+}
+
+.title{
+  background-color: white;
+  border-radius: 10px;
+  flex-grow: 0;
+  margin: 10px 10px;
+}
+
+.datestatus{
+  flex-grow: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+  width: 90%;
+
+  padding: 0 5%;
+}
+.status{
+
+  text-align: center;
+  background-color: gold;
+  border-radius: 15px;
+  order:1;
+  flex-grow: 1;
+}
+.space{
+  order:2;
+  flex-grow: 6;
+}
+.date{
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  order: 3;
+  flex-grow:  1;
+}
+
+
+.desc{
+  margin: 5%;
+  width:90%;
+  background-color: white;
+  border-radius: 15px;
+  flex-grow: 5;
+  overflow: auto;
+}
+
+.desc textarea{
+  margin-top: 3px;
+  resize: none;
+  border: none;
+  width: 95%;
+  height: 90%;
+}
