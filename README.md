@@ -1,21 +1,26 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Purpose of this projcect is to immitate todo-list web application, thats available online, using reactJS.
 
-## Available Scripts
+## REST API Server
 
-In the project directory, you can run:
+This project uses JSON REST APIs to fetch user's to do list.
 
-### `npm start`
+### `Fake REST API` - [json-server] (https://www.npmjs.com/package/json-server)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For the purpose of this project, which is to create front-end of a web application,
+used placeholder for the REST API instead of using actual server.<br />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+However, as long as format of json matches requirement for this project, actual server can be used for the project.
 
-### `npm test`
+### `json Format`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```json
+{
+“id”: someNumber,
+“Tasks”: [ list of json format tasks]
+}
+```
+
 
 ### `npm run build`
 
